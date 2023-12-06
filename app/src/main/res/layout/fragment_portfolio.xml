@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".fragments.PortfolioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#333"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/plus"
+            android:drawablePadding="4dp"
+            android:drawableTint="#fff"
+            app:strokeColor="#1B1818"/>
+
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/portfolio_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:childDivider="@color/cardview_light_background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/portfolio_item">
+
+
+    </ExpandableListView>
+
+</LinearLayout>
